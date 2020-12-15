@@ -10,20 +10,20 @@ So I changed several lines of codes and extended more Chinese chat title entitie
 The main purpose of the job（examples）:
 
 ```
-Input One: 小贾你最近忙什么呢？<br>
-Input Two: 贾舒越<br>
+Input One: 小贾你最近忙什么呢？
+Input Two: 贾舒越
 Output: 小贾 is 贾舒越
 
-Input One: 建勋师兄你何时来实验室？<br>
-Input Two: 邸建勋<br>
+Input One: 建勋师兄你何时来实验室？
+Input Two: 邸建勋
 Output: 建勋师兄 is 王建勋
 
-Input One: 最近王宇航学习怎么样呀<br>
-Input Two: 王海生<br>
+Input One: 最近王宇航学习怎么样呀
+Input Two: 王海生
 Output: There is no match for 王海生.
 
-Input One: 贾泽阳现在回家了嘛<br>
-Input Two: 吴泽阳<br>
+Input One: 贾泽阳现在回家了嘛
+Input Two: 吴泽阳
 Output: There is no match for 吴泽阳.
 ```
 
@@ -32,11 +32,11 @@ For Chinese readers, you guys could read the [提取聊天对方的称谓 - 方�
 ### Step One: configure the tensorflow and bert environment<br>
 
 ```
-pip install bert-base==0.0.7 -i https://pypi.python.org/simple<br>
-tensorflow >= 1.12.0<br> 
-tensorflow-gpu >= 1.12.0  # GPU version of TensorFlow.<br> 
-GPUtil >= 1.3.0  # no need if you dont have GPU<br> 
-pyzmq >= 17.1.0  # python zmq<br> 
+pip install bert-base==0.0.7 -i https://pypi.python.org/simple
+tensorflow >= 1.12.0
+tensorflow-gpu >= 1.12.0  # GPU version of TensorFlow.
+GPUtil >= 1.3.0  # no need if you dont have GPU
+pyzmq >= 17.1.0  # python zmq
 ```
 
 ### Step Two: Download the BERT pre-trained model and training dataset<br>
